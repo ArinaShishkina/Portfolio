@@ -84,20 +84,6 @@ const workCards = [
     title: 'Social Media Campaign',
     desc: 'Multi-platform social media campaign designed to drive engagement and brand awareness across Instagram, TikTok, and Facebook.',
   },
-  {
-    type: 'video',
-    src: '',
-    category: 'Brand Design',
-    title: 'Visual Identity Package',
-    desc: 'Comprehensive visual identity design including logo, colour palette, typography, and brand guidelines for a new business launch.',
-  },
-  {
-    type: 'emoji',
-    emoji: '📈',
-    category: 'Analytics & Strategy',
-    title: 'Digital Marketing Strategy',
-    desc: 'Full digital marketing strategy with SEO recommendations, content calendar, and performance tracking framework for a food brand.',
-  },
 ];
 
 const mottos = [
