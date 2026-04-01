@@ -61,7 +61,7 @@ const workCards = [
     embedSrc: YOUTUBE_1,
     category: 'Brand Video',
     title: 'Emerald Brand Project',
-    desc: 'Creative brand video showcasing visual storytelling, colour grading, and professional video production for a luxury brand concept.',
+    desc: 'Creative brand  tese video showcasing visual storytelling, colour grading, and professional video production for a luxury brand concept.',
   },
   {
     type: 'embed',
