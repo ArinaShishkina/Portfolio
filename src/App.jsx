@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from 'react';
 
 const GRADUATION_IMG =
   'https://files.manuscdn.com/user_upload_by_module/session_file/310519663417547159/HFSrcRnaWdrCThFd.jpg';
-const VIDEO_1 = '/videos/emerald-brand-project.mp4';
-const VIDEO_2 = '/videos/ucd-smurfit-interview-reel.mp4';
-const VIDEO_3 = '/videos/zavarka.mp4';
+const projectVideo = fileName => `${import.meta.env.BASE_URL}videos/${fileName}`;
+const VIDEO_1 = '';
+const VIDEO_2 = '';
+const VIDEO_3 = projectVideo('zavarka.mp4');
 
 const skillCards = [
   {
