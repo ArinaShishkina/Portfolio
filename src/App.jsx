@@ -3,9 +3,9 @@ import React, { useEffect, useRef } from 'react';
 const GRADUATION_IMG =
   'https://files.manuscdn.com/user_upload_by_module/session_file/310519663417547159/HFSrcRnaWdrCThFd.jpg';
 const YOUTUBE_1 = 'https://www.youtube.com/embed/d_rhRVEV77c?rel=0&modestbranding=1';
-const YOUTUBE_2 = 'https://www.youtube.com/embed/qpCutsM-9Hc?rel=0&modestbranding=1';
-const YOUTUBE_3 = 'https://www.youtube.com/embed/p76FzeKNPe8?rel=0&modestbranding=1';
-const YOUTUBE_4 = 'https://www.youtube.com/embed/6LuFJO_g1D8?rel=0&modestbranding=1';
+const YOUTUBE_2 = 'https://www.youtube.com/embed/6LuFJO_g1D8?rel=0&modestbranding=1';
+const YOUTUBE_3 = 'https://www.youtube.com/embed/qpCutsM-9Hc?rel=0&modestbranding=1';
+const YOUTUBE_4 = 'https://www.youtube.com/embed/p76FzeKNPe8?rel=0&modestbranding=1';
 
 const skillCards = [
   {
@@ -606,7 +606,7 @@ function Work() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 28 }}>
+        <div className="work-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 28 }}>
           {workCards.map((card, i) => (
             <div
               key={i}
@@ -832,6 +832,11 @@ function Contact() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'center', marginBottom: 48 }}>
           {[
             { emoji: '📸', label: 'INST: SHISHKARIC_', href: 'https://instagram.com/shishkaric_' },
+            {
+              emoji: '💼',
+              label: 'LINKEDIN: ARINA SHISHKINA',
+              href: 'https://www.linkedin.com/in/arina-shishkina?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+            },
             { emoji: '📞', label: '+353 83 022 1043', href: 'tel:+353830221043' },
             { emoji: '✉️', label: 'SHISHKINA.ARINA.25@GMAIL.COM', href: 'mailto:shishkina.arina.25@gmail.com' },
           ].map(item => (
