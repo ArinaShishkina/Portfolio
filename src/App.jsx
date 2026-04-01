@@ -2,10 +2,9 @@ import React, { useEffect, useRef } from 'react';
 
 const GRADUATION_IMG =
   'https://files.manuscdn.com/user_upload_by_module/session_file/310519663417547159/HFSrcRnaWdrCThFd.jpg';
-const VIDEO_1 =
-  'https://files.manuscdn.com/user_upload_by_module/session_file/310519663417547159/lYFlSCEZlLikqBPv.mp4';
-const VIDEO_2 =
-  'https://files.manuscdn.com/user_upload_by_module/session_file/310519663417547159/uKfmGlBTUZUvPdoq.MP4';
+const VIDEO_1 = '/videos/emerald-brand-project.mp4';
+const VIDEO_2 = '/videos/ucd-smurfit-interview-reel.mp4';
+const VIDEO_3_EMBED = 'https://www.youtube.com/embed/p76FzeKNPe8?rel=0&modestbranding=1';
 
 const skillCards = [
   {
@@ -71,22 +70,22 @@ const workCards = [
     desc: 'Data-driven interview content created after analysing trending formats and engagement patterns. Optimised for social media reach and audience interaction.',
   },
   {
-    type: 'video',
-    src: 'PASTE_YOUR_VIDEO_URL_HERE',
+    type: 'embed',
+    embedSrc: VIDEO_3_EMBED,
     category: 'Product Demo',
     title: 'Product Showcase',
     desc: 'Product demonstration content designed to highlight key features and benefits while maintaining high production quality and engagement.',
   },
   {
     type: 'video',
-    src: 'PASTE_YOUR_VIDEO_URL_HERE',
+    src: '',
     category: 'Social Media',
     title: 'Social Media Campaign',
     desc: 'Multi-platform social media campaign designed to drive engagement and brand awareness across Instagram, TikTok, and Facebook.',
   },
   {
     type: 'video',
-    src: 'PASTE_YOUR_VIDEO_URL_HERE',
+    src: '',
     category: 'Brand Design',
     title: 'Visual Identity Package',
     desc: 'Comprehensive visual identity design including logo, colour palette, typography, and brand guidelines for a new business launch.',
@@ -633,7 +632,7 @@ function Work() {
                 transition: 'transform 0.3s, border-color 0.3s',
               }}
             >
-              {card.type === 'video' && card.src !== 'PASTE_YOUR_VIDEO_URL_HERE' ? (
+              {card.type === 'video' && card.src ? (
                 <video
                   style={{ width: '100%', height: 250, objectFit: 'cover', display: 'block', background: '#000' }}
                   controls
@@ -643,6 +642,15 @@ function Work() {
                   <source src={card.src} type="video/mp4" />
                   Your browser does not support HTML5 video.
                 </video>
+              ) : card.type === 'embed' && card.embedSrc ? (
+                <iframe
+                  src={card.embedSrc}
+                  title={card.title}
+                  style={{ width: '100%', height: 250, border: 0, display: 'block', background: '#000' }}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
               ) : (
                 <div
                   style={{
@@ -657,7 +665,7 @@ function Work() {
                 >
                   <span style={{ fontSize: 40 }}>🎬</span>
                   <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.35)' }}>
-                    Paste your video URL in the code
+                    Add file in public/videos and set card src
                   </span>
                 </div>
               )}
