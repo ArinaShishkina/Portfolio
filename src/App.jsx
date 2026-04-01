@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 
 const GRADUATION_IMG =
   'https://files.manuscdn.com/user_upload_by_module/session_file/310519663417547159/HFSrcRnaWdrCThFd.jpg';
-const projectVideo = fileName => `${import.meta.env.BASE_URL}videos/${fileName}`;
 const YOUTUBE_1 = 'https://www.youtube.com/embed/d_rhRVEV77c?rel=0&modestbranding=1';
 const YOUTUBE_2 = 'https://www.youtube.com/embed/qpCutsM-9Hc?rel=0&modestbranding=1';
-const VIDEO_3 = projectVideo('zavarka.mp4');
+const YOUTUBE_3 = 'https://www.youtube.com/embed/p76FzeKNPe8?rel=0&modestbranding=1';
+const YOUTUBE_4 = 'https://www.youtube.com/embed/6LuFJO_g1D8?rel=0&modestbranding=1';
 
 const skillCards = [
   {
@@ -71,15 +71,15 @@ const workCards = [
     desc: 'Data-driven interview content created after analysing trending formats and engagement patterns. Optimised for social media reach and audience interaction.',
   },
   {
-    type: 'video',
-    src: VIDEO_3,
+    type: 'embed',
+    embedSrc: YOUTUBE_3,
     category: 'Product Demo',
     title: 'Product Showcase',
     desc: 'Product demonstration content designed to highlight key features and benefits while maintaining high production quality and engagement.',
   },
   {
-    type: 'video',
-    src: '',
+    type: 'embed',
+    embedSrc: YOUTUBE_4,
     category: 'Social Media',
     title: 'Social Media Campaign',
     desc: 'Multi-platform social media campaign designed to drive engagement and brand awareness across Instagram, TikTok, and Facebook.',
