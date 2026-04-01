@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 const GRADUATION_IMG =
   'https://files.manuscdn.com/user_upload_by_module/session_file/310519663417547159/HFSrcRnaWdrCThFd.jpg';
 const projectVideo = fileName => `${import.meta.env.BASE_URL}videos/${fileName}`;
-const VIDEO_1 = '';
+const YOUTUBE_1 = 'https://www.youtube.com/embed/d_rhRVEV77c?rel=0&modestbranding=1';
 const VIDEO_2 = '';
 const VIDEO_3 = projectVideo('zavarka.mp4');
 
@@ -57,8 +57,8 @@ const tools = [
 
 const workCards = [
   {
-    type: 'video',
-    src: VIDEO_1,
+    type: 'embed',
+    embedSrc: YOUTUBE_1,
     category: 'Brand Video',
     title: 'Emerald Brand Project',
     desc: 'Creative brand video showcasing visual storytelling, colour grading, and professional video production for a luxury brand concept.',
