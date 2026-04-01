@@ -4,7 +4,7 @@ const GRADUATION_IMG =
   'https://files.manuscdn.com/user_upload_by_module/session_file/310519663417547159/HFSrcRnaWdrCThFd.jpg';
 const projectVideo = fileName => `${import.meta.env.BASE_URL}videos/${fileName}`;
 const YOUTUBE_1 = 'https://www.youtube.com/embed/d_rhRVEV77c?rel=0&modestbranding=1';
-const VIDEO_2 = '';
+const YOUTUBE_2 = 'https://www.youtube.com/embed/qpCutsM-9Hc?rel=0&modestbranding=1';
 const VIDEO_3 = projectVideo('zavarka.mp4');
 
 const skillCards = [
@@ -64,8 +64,8 @@ const workCards = [
     desc: 'Creative brand video showcasing visual storytelling, colour grading, and professional video production for a luxury brand concept.',
   },
   {
-    type: 'video',
-    src: VIDEO_2,
+    type: 'embed',
+    embedSrc: YOUTUBE_2,
     category: 'Engagement Strategy',
     title: 'UCD Smurfit Interview Reel',
     desc: 'Data-driven interview content created after analysing trending formats and engagement patterns. Optimised for social media reach and audience interaction.',
