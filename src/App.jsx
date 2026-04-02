@@ -66,23 +66,23 @@ const workCards = [
   {
     type: 'embed',
     embedSrc: YOUTUBE_2,
-    category: 'Engagement Strategy',
+    category: 'Treatment Demo',
+    title: 'Facial Treatment Reel',
+    desc: 'Trust-focused video content designed to promote the clinic’s procedures and build patient confidence. Created as a calm, short-form social media piece to showcase real experiences, increase credibility, and encourage audience trust and engagement.',
+  },
+  {
+    type: 'embed',
+    embedSrc: YOUTUBE_3,
+    category: 'Engagement Startegy',
     title: 'UCD Smurfit Interview Reel',
     desc: 'Data-driven interview content created after analysing trending formats and engagement patterns. Optimised for social media reach and audience interaction.',
   },
   {
     type: 'embed',
-    embedSrc: YOUTUBE_3,
-    category: 'Product Demo',
-    title: 'Product Showcase',
-    desc: 'Product demonstration content designed to highlight key features and benefits while maintaining high production quality and engagement.',
-  },
-  {
-    type: 'embed',
     embedSrc: YOUTUBE_4,
     category: 'Social Media',
-    title: 'Social Media Campaign',
-    desc: 'Multi-platform social media campaign designed to drive engagement and brand awareness across Instagram, TikTok, and Facebook.',
+    title: 'Promotional Video',
+    desc: 'Multi-platform campaign promoting an upcoming bar event across Instagram, TikTok, and Facebook. Created to boost brand awareness, drive audience engagement, and increase event attendance through targeted, platform-specific content.',
   },
 ];
 
